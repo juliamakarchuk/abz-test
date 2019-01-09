@@ -1,0 +1,67 @@
+@import "../../../css/styles.scss";
+.loadphoto-block{
+    width: 100%;
+    form{
+        display: flex;
+        border-radius: px-to-rem(4px);
+        font-size: px-to-rem(16px);
+        .form-input{
+            width: 100%;
+            font-size: px-to-rem(16px);
+            color: $text-color;
+            outline: none;
+            font-family: $secondary-font-family;
+            padding: px-to-rem(16px) px-to-rem(16px);
+            border: 1px solid $text-color;
+            border-right: none;
+            border-top-left-radius: px-to-rem(4px);
+            border-bottom-left-radius: px-to-rem(4px);
+        }
+        .input-notValid{
+            border: 1px solid red;
+        }
+        .loadphoto__btn{
+            padding: px-to-rem(8px) px-to-rem(10px);
+            background-color: transparent;
+            font-family: $secondary-font-family;
+            font-weight: 700;
+            font-size: px-to-rem(20px);
+            border: 2px solid $main-color;
+            border-top-right-radius: px-to-rem(4px);
+            border-bottom-right-radius: px-to-rem(4px);
+            color: $main-color;
+            outline: none;
+            &:hover{
+                border: 2px solid $main-color--hover;
+                color: $main-color--hover;
+            }
+        }
+    }
+    .loadphoto__text{
+        @extend %pharagraph4;
+        margin-top: px-to-rem(5px);
+        padding: 0 px-to-rem(17px);
+    }
+}
+@media (min-width: 768px){
+    .loadphoto-block{
+        width: 48%;
+        align-self: flex-start;
+        form{
+            .form-input{
+                padding: px-to-rem(15.5px) px-to-rem(16px);
+            }
+            .loadphoto__btn{
+                padding: px-to-rem(7px) px-to-rem(33px);
+            }
+        }
+        .loadphoto__text{
+            margin-top: px-to-rem(5px);
+        }
+    }
+}
+@media (min-width: 1024px){
+    .loadphoto-block{
+        width: 48.5%;
+    }
+}

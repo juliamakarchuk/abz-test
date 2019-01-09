@@ -1,0 +1,49 @@
+@import "../../css/styles.scss";
+.registration-block{
+    padding: px-to-rem(62px) px-to-rem(13px) px-to-rem(70px) px-to-rem(15.5px);
+    .registration-block__title{
+        margin-bottom: px-to-rem(17px);
+        line-height: px-to-rem(31px);
+        text-align: center;
+    }
+    .registration-block__text{
+        @extend %text;
+        line-height: px-to-rem(21px);
+        margin-bottom: px-to-rem(33px);
+    }
+}
+@media (min-width: 768px){
+    .registration-block{
+    padding: px-to-rem(129px) px-to-rem(23px) px-to-rem(122px) px-to-rem(23px);
+      .registration-block__title{
+        line-height: px-to-rem(51px);
+        margin-bottom: px-to-rem(27px);
+      }
+      .registration-block__text{
+          width: 52%;
+          margin: auto;
+          text-align: justify;
+          margin-bottom: px-to-rem(52px);
+      }
+
+    }
+}
+@media (min-width: 1024px){
+    .registration-block{
+        padding: px-to-rem(145px) px-to-rem(47px) px-to-rem(140px) px-to-rem(47px);
+        .registration-block__title{
+            line-height: px-to-rem(60px);
+            margin-bottom: px-to-rem(13.5px);
+        }
+        .registration-block__text{
+            width: 100%;
+            text-align: center;
+            margin-bottom: px-to-rem(62px);
+        }
+    }
+}
+@media (min-width: 2400px){
+    .registration-block{
+        padding: px-to-rem(145px) px-to-rem(10px) px-to-rem(150px) px-to-rem(21px);
+    }
+}

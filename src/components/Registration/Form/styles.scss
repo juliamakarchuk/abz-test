@@ -1,0 +1,115 @@
+@import "../../../css/styles.scss";
+.registration-form{
+    position: relative;
+    @include flex-settings(column, space-between, stretch);
+    flex-wrap: wrap;
+    .registration-form__item{
+        position: relative;
+        display: block;
+        width: 100%;
+        margin-bottom: px-to-rem(35px);
+        padding: px-to-rem(17px) px-to-rem(16px);
+        border: 1px solid $text-color;
+        border-radius: px-to-rem(4px);
+        outline: none;
+        transition: .5s;
+        .registration-form-item__header{
+            display: inline-block;
+            position: absolute;
+            top: -14%;
+            left: 2%;
+            background-color: white;
+            padding: 0 px-to-rem(6px);
+            font-family: $secondary-font-family;
+            font-size: px-to-rem(12px);
+            color: $text-color;
+            transition: .5s;
+        }
+        input{
+            width: 100%;
+            height: auto;
+            font-size: px-to-rem(16px);
+            outline: none;
+            color: $text-color;
+            font-family: $secondary-font-family;
+            border: none;
+        }
+    }
+    .registration-form__item--invalid{
+        color: red;
+        font-size: px-to-rem(16px);
+        border: 1px solid red;
+        outline: none;
+        input{
+           color: $text-color
+        }
+        .registration-form-item__header{
+            color: red
+        }
+    }
+    .registration-form__item--valid{
+        input{
+            color: black;
+        }
+    }
+    .registration-form__btn:disabled,
+    .registration-form__btn{
+        @extend %btn;
+        width: 100%;
+        margin: auto;
+        padding: px-to-rem(7px) 0 px-to-rem(7px) 0;
+        margin-top: px-to-rem(34px); 
+        transition: 1s;
+        outline: none;
+    }
+    .registration-form__btn{
+        background-color: $main-color;
+        color: white;
+        &:hover{
+            background-color: $main-color--transparent;
+        }
+    }
+    .registration-form__btn:disabled{
+        cursor: auto;
+        color: $text-color;
+        background-color: #d7d7d7;
+    }
+}
+@media (min-width: 768px){
+    .registration-form{
+        flex-direction: row;
+        .registration-form__item{
+            width: 30.5%;
+            margin-bottom: px-to-rem(40px);
+        }
+        .registration-form__btn:disabled,
+        .registration-form__btn{
+            margin-top: px-to-rem(42px); 
+            width: 40.5%;
+            padding: px-to-rem(7px) 0;
+        }
+    }
+}
+@media (min-width: 1024px){
+    .registration-form{
+        .registration-form__item{
+            width: 31%;
+        }
+        .registration-form__btn,
+        .registration-form__btn:disabled,{
+            width: 31%;
+        }
+    }
+}
+@media (min-width: 2400px){
+    .registration-form{
+        .registration-form__item{
+            width: 31.6%;
+        }
+        .registration-form__btn,
+        .registration-form__btn:disabled,{
+            margin-top: px-to-rem(46px); 
+            width: 26%;
+        }
+    }
+}

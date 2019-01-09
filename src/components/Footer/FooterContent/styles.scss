@@ -1,0 +1,118 @@
+@import "../../../css/styles.scss";
+.footer-content{
+    width: 70%;
+    margin: auto;
+    padding-top: px-to-rem(26px);
+    @include flex-settings(column, flex-start, center);
+}
+.footer-contacts{
+    padding: 0;
+    .footer-contacts__item{
+        margin-bottom: px-to-rem(26px);
+        text-align: center;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        a{  
+            @extend %pharagraph1;
+            align-self: center;
+            color: white;
+            text-decoration: none;
+        }
+        i{
+            display: none;
+        }
+    }
+   }
+.footer-content__nav{
+    display: none;
+}
+@media (min-width: 768px){
+    .footer-content{
+        padding: px-to-rem(23px) px-to-rem(25px) 0px px-to-rem(23px);
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer-contacts{
+        width: 25%;
+        .footer-contacts__item{
+            text-align: left;
+            margin-bottom: px-to-rem(20px);
+            &:last-child{
+                margin-bottom: 0;
+            }
+            a{  
+                font-size: px-to-rem(18px);
+                line-height: px-to-rem(24px);
+            }
+        }
+    }
+    .footer-content__nav{
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+       .footer-content__item{
+        width: 25%;
+        text-align: right;
+        a{  
+            font-family: 'Source Sans Pro';
+            font-weight: 400;
+            font-size: px-to-rem(16px);
+            line-height: px-to-rem(30px);
+            color: white;
+            text-decoration: none;
+            &:hover{
+                color: $main-color;
+            }
+        }
+        }
+    }
+}
+@media (min-width: 1024px){
+    .footer-content{
+        padding: px-to-rem(20px) px-to-rem(44px) 0px px-to-rem(47px);
+        .footer-contacts__item{
+            display: flex;
+            align-items: center;
+            margin-bottom: px-to-rem(13px);
+            &:hover svg{
+                fill: $main-color;
+            }
+            &:hover a {
+                color: $main-color;
+            }
+         i{  
+            display: flex;
+            align-items: center;
+            margin-right: px-to-rem(10px);
+            width: px-to-rem(30px);
+            height: px-to-rem(30px);
+            svg{
+                width: px-to-rem(25px);
+                height: px-to-rem(25px);
+                fill: white;
+            }
+        }
+            a{  
+                align-self: center;
+                color: white;
+                text-decoration: none;
+                font-size: 20px;
+            }
+        }
+    }
+}
+@media (min-width: 2400px){
+    .footer-content{
+        padding: px-to-rem(20px) px-to-rem(10px) 0px px-to-rem(16px);
+        .footer-contacts__item{
+         i{  
+            margin-right: px-to-rem(5px);
+         }
+        }
+        .footer-content__nav{
+            width: 68%;
+        }
+    }
+}

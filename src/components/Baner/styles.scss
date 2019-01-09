@@ -1,0 +1,153 @@
+@import "../../css/styles.scss";
+
+.wrapper-img{
+    @extend %bgc-img;
+    position: relative;
+    background-image: url(../../images/Mobile.png);
+    top: 65px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .wrapper-img {
+      background: url(../../images/Mobile@2x.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center top;
+    }
+}
+.baner{
+    padding: px-to-rem(63px) px-to-rem(10px) px-to-rem(70px) px-to-rem(10px);
+    .baner__title{
+       margin-bottom: px-to-rem(14px);
+       padding: 0 px-to-rem(11px);
+       text-align: center;
+       line-height: px-to-rem(34px);
+    }
+    .baner__text{
+        @extend %pharagraph2;
+        line-height: px-to-rem(22px);
+        margin-bottom: px-to-rem(38px);
+        color: white;
+        text-align: center;
+        padding: 0 px-to-rem(11px);
+        span{
+            display: none;
+        }
+    }
+    .baner__btn{
+        @extend %btn;
+        width: 97%;
+        padding: px-to-rem(9px) 0 px-to-rem(11px) 0;
+        display: block;
+        background-color: $main-color;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: white;
+        margin: auto;
+        transition: 1s;
+        &:hover{
+            background-color: $main-color--hover;
+        }
+    }
+}
+@media (min-width: 768px){
+    .wrapper-img{
+        background-image: url(../../images/Tablet.png);
+    }
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .wrapper-img {
+          background: url(../../images/Tablet@2x.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center top;
+        }
+    }
+    .baner{
+        padding: px-to-rem(108px) 0px px-to-rem(120px) px-to-rem(23px);
+        .baner__title{
+            width: 60%;
+            padding: 0;
+            line-height: px-to-rem(51px);
+            margin-bottom: px-to-rem(23px);
+            text-align: left;
+        }
+        .baner__text{
+            width: 53%;
+            padding: 0;
+            font-size: px-to-rem(18px);
+            line-height: px-to-rem(24px);
+            text-align: left;
+            margin-bottom: px-to-rem(32px);
+            span{
+                display: inline;
+            }
+        }
+        .baner__btn{
+            margin: 0 0;
+            width: 39%;
+        }
+    }
+}
+@media (min-width: 1024px){
+    .wrapper-img{
+        background-image: url(../../images/Desktop.png);
+        top: 63px;
+    }
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .wrapper-img {
+          background: url(../../images/Desktop@2x.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center top;
+        }
+    }
+    .baner{
+        padding: px-to-rem(128px) px-to-rem(47px) px-to-rem(160px) px-to-rem(46px);
+        .baner__title{
+           line-height: px-to-rem(60px);
+           margin-bottom: px-to-rem(23px);
+           text-align: left;
+           padding: 0px;
+        }
+        .baner__text{
+            width: 46%;
+            font-size: px-to-rem(20px);
+            line-height: px-to-rem(26px);
+            margin-bottom: px-to-rem(40px);
+        }
+        .baner__btn{
+            margin: 0 0;
+            width: 31%;
+        }
+    }
+}
+@media (min-width: 2400px){
+    .wrapper-img{
+        position: relative;
+        background-image: url(../../images/2K.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .wrapper-img {
+          background: url(../../images/2K@2x.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+    }
+    .baner{
+        padding: px-to-rem(128px) px-to-rem(47px) px-to-rem(143px) px-to-rem(15px);
+        .baner__title{
+            width: 50%;
+        }
+        .baner__text{
+            width: 42%;
+            margin-bottom: px-to-rem(34px);
+        }
+         .baner__btn{
+            width: 26.1%;
+        }
+    }
+}

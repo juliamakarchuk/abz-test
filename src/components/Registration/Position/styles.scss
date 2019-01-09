@@ -1,0 +1,72 @@
+@import "../../../css/styles.scss";
+.position-block{
+    align-self: flex-start;
+    width: 100%;
+    margin-bottom: px-to-rem(35px);
+    border: 1px solid $text-color;
+    font-family: $secondary-font-family;
+    font-size: px-to-rem(16px);
+    border-radius: px-to-rem(4px);
+    .position-block__text{
+        display: flex;
+        justify-content: space-between;
+        padding: px-to-rem(18px) px-to-rem(16px);
+        color: black;
+    }
+    ul{
+        display: none;
+        position: relative;
+        top: 100%;
+        z-index: 100;
+        left: 0;
+        padding: 0px 0px;
+        width: 100%;
+        background-color: white;
+        li{
+          padding: px-to-rem(16px) px-to-rem(16px);
+        }
+    }
+    .position-block__icon{
+        width: px-to-rem(18px);
+        height: px-to-rem(15px);
+        display: block;
+        background-image: url(../../../icons/caret-down.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: 0.4s;
+    }
+    option{
+        outline: none
+    }
+}
+.position-block-active{
+    .span{
+       color: $main-color;
+    }
+    ul{
+        display: block;
+        li:hover{
+                background-color: #fce2cc;
+            }
+    }
+    .position-block__icon{
+        transform: rotate(-180deg)
+    }
+}
+.position-invalid{
+    border: 1px solid red;
+}
+@media (min-width: 768px){
+    .position-block{
+        width: 47.5%;
+        margin-bottom: 0px;
+        .position-block__text{
+            padding: px-to-rem(19px) px-to-rem(16px);
+        }
+    }
+}
+@media (min-width: 1024px){
+    .position-block{
+        width: 48.3%;
+    }
+}

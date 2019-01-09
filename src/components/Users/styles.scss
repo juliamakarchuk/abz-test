@@ -1,0 +1,90 @@
+@import "../../css/styles.scss";
+.wrapper-spinner{
+    position: relative;
+}
+.users-block{
+    padding: px-to-rem(64px) px-to-rem(16px) 0px px-to-rem(18px);
+    .users-block__title{
+        margin-bottom: px-to-rem(16px);
+        line-height: px-to-rem(31px);
+        text-align: center;
+    }
+    .users-block__text{
+        @extend %text;
+        padding: 0 px-to-rem(60px);
+        line-height: px-to-rem(22px);
+        margin-bottom: px-to-rem(30px);
+    }
+    .users-block__btn{
+        @extend %btn;
+        width: 100%;
+        display: block;
+        margin: auto;
+        margin-top: px-to-rem(30px);
+        padding: px-to-rem(6px) 0 px-to-rem(6px) 0;
+        border: 2px solid $main-color;
+        color: $main-color;
+        background-color: transparent;
+        transition: 1s;
+        &:hover{
+            background-color: $main-color--transparent;
+        }
+    }
+    .users-block__btn--disabled{
+        color: $text-color;
+        background-color: #d7d7d7;
+        border: 2px solid  #d7d7d7;
+    }
+    .users-list{
+        @include flex-settings(column, flex-start, center);
+    }
+}
+@media (min-width: 768px){
+    .users-block{
+        padding: px-to-rem(110px) px-to-rem(26px) 0px px-to-rem(26px);
+        .users-block__title{
+            line-height: px-to-rem(51px);
+        }
+        .users-block__text{
+            line-height: px-to-rem(24px);
+            margin-bottom: px-to-rem(37px);
+        }
+        .users-list{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .users-block__btn{
+            width: 40.5%;
+            margin-top: px-to-rem(54px);
+            padding: px-to-rem(6px) 0;
+        }
+    }
+}
+@media (min-width: 1024px){
+    .users-block{
+        padding: px-to-rem(128px) px-to-rem(47px) 0px px-to-rem(47px);
+        .users-block__title{
+            margin-bottom: px-to-rem(11px);
+            line-height: px-to-rem(60px);
+        }
+        .users-block__text{
+            margin-bottom: px-to-rem(55px);
+            padding: 0;
+        }
+        .users-block__btn{
+            width: 31%;
+        }
+    }
+}
+@media (min-width: 2400px){
+    .users-block{
+        padding: px-to-rem(130px) px-to-rem(10px) 0px px-to-rem(23px);
+        .users-block__text{
+            margin-bottom: px-to-rem(58px);
+        }
+        .users-block__btn{
+            width: 26%;
+        }
+    }
+}

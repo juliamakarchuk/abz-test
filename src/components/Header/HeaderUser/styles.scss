@@ -1,0 +1,57 @@
+@import "../../../css/styles.scss";
+.nav-menu__user-block{
+    @include flex-settings(column, flex-start, stretch);
+    padding: px-to-rem(20px) px-to-rem(15px) px-to-rem(20px) px-to-rem(15px);
+    border-bottom: 1px solid #e1e1e1;
+    .user-block__name{
+        @extend %pharagraph3;
+        text-align: left;
+        margin-bottom: px-to-rem(7px);
+    }
+    .user-block__mail{
+        text-align: left;
+        @extend %pharagraph4;
+        color: $text-color;
+    }
+    img{
+        display: block;
+        margin-bottom: px-to-rem(19px);
+        width: px-to-rem(40px);
+        height: px-to-rem(40px);
+        border-radius: 50%;
+        box-sizing: content-box;
+    }
+}
+@media (min-width: 1024px){
+    .nav-menu__user-block{
+        width: 32.5%;
+        flex-direction: row;
+        align-items: center;
+        border-bottom: none;
+        padding: 0;
+    i{
+      align-self: center;
+      display:block;
+      width: px-to-rem(40px);
+      height: px-to-rem(24px);
+      vertical-align: middle;
+      background-image: url(../../../icons/sign-out-option.svg);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      order: 3;
+      &:hover{
+          opacity: 0.7;
+      }
+    }
+    .user-block__name{
+        text-align: right;
+        margin-bottom: px-to-rem(4px);
+    }
+    img{
+        margin: 0;
+        margin-left: px-to-rem(12px);
+        margin-right: px-to-rem(12px);
+        order: 1;
+    }
+    }
+}

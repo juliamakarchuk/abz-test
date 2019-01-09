@@ -1,0 +1,60 @@
+@import "../../css/styles.scss";
+
+.header{
+  position: relative;
+  .header__navigation-menu{
+    @include flex-settings(column, flex-start, stretch);
+    position: absolute;
+    width: 60%;
+    height: calc(100% + 65px);
+    left: -100%;
+    transition: 1s;
+    z-index: 200;
+    background-color: white;
+  }
+  .header__navigation-menu--show{
+    left: 0;
+    transition: 1.5s;
+  }
+}
+@media (min-width: 768px){
+  .header{
+    .header__navigation-menu{
+      width: 33%;
+    }
+  }
+}
+@media (min-width: 1024px){
+  .wrapper--header{
+    background-color: white;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+  }
+  .header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    .header__navigation{
+      padding: px-to-rem(12px) 0 px-to-rem(11px) 0;
+      display: flex;
+      justify-content: space-between;
+      background-color: white;
+
+    }
+    .header__navigation-menu{
+       width: 76%; 
+       height: 100%;
+       position: relative;
+       top: 0;
+       left: 0;
+       flex-direction: row;
+       justify-content: space-between;
+    }
+  }
+}
+@media (min-width: 2400px){
+  .header__navigation{
+    padding: px-to-rem(26px) 0 px-to-rem(26px) 0;
+  }
+}

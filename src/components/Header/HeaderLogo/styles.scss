@@ -1,0 +1,60 @@
+@import "../../../css/styles.scss";
+.header__logo-container{
+    width: 100%;
+    @include flex-settings(row, space-between, center);
+    padding: px-to-rem(20px) px-to-rem(16px) px-to-rem(18px) px-to-rem(17px);
+    position: fixed;
+    z-index: 100;
+    background-color: white;
+}
+.header__logo{
+    width: px-to-rem(134px);
+    height: px-to-rem(24px);
+}
+.menu-span{
+    position: relative;
+    display: block;
+    width: px-to-rem(24px);
+    height: px-to-rem(4px);
+    background-color: $secondary-color;
+    border-radius: 2px;
+    &::before,
+    &::after{
+      content: '';
+      display: block;
+      width: px-to-rem(24px);
+      height: px-to-rem(4px);
+      background-color: $secondary-color;
+      margin-top: -1.5px;
+      border-radius: 2px;
+    }
+    &::before{
+      transform: translateY(-6px);
+    }
+    &::after{
+      transform: translateY(6px);
+    }
+}
+@media (min-width: 768px){
+  .header__logo-container{
+    padding: px-to-rem(20px) px-to-rem(24px) px-to-rem(18px) px-to-rem(24px);
+  }
+}
+@media (min-width: 1024px){
+  .header__logo-container{
+    width: 13%;
+    padding: 0;
+    padding-left: px-to-rem(47px);
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+    .menu-span{
+      display: none;
+    }
+  }
+}
+@media (min-width: 2400px){
+  .header__logo-container{
+    padding: 0px 0px 0px px-to-rem(15px);
+  }
+}

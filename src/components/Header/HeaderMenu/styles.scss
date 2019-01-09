@@ -1,0 +1,51 @@
+@import "../../../css/styles.scss";
+
+.header__container{
+    @include flex-settings(column, flex-start, stretch);
+    padding: px-to-rem(30px) px-to-rem(15px) 0 px-to-rem(15px);
+    .header__menu{
+      @include flex-settings(column, flex-start, stretch);
+      list-style: none;
+      li{
+          margin-bottom: px-to-rem(30px);
+          &:last-child{
+              margin-bottom: 0px;
+          }
+      }
+      a{  
+          @extend %pharagraph2;
+          text-decoration: none;
+          color: black;
+        &:hover{
+            color: $main-color;
+        }
+      }
+    }
+}
+@media (min-width: 1024px){
+    .header__container{
+        width: 70%;
+        flex-direction: row;
+        align-items: center;
+        order: -1;
+        padding: 0;
+        .header__menu{
+            width: 100%;
+            flex-direction: row;
+            li{
+              text-align: center;
+              margin-bottom: 0;
+              margin-right: px-to-rem(30px);
+              &:last-child{
+                  margin-right: 0;
+              }
+            }
+        }
+    }
+}
+@media (min-width: 2400px){
+    .header__container{
+        padding: 0px px-to-rem(20px) 0 px-to-rem(40px);
+        width: 100%;
+    }
+}

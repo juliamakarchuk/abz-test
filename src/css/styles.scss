@@ -1,0 +1,181 @@
+@import './reset.scss';
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$main-color: #ef6c00;
+$main-color--hover: #fa8331;
+$main-color--transparent: #FDE6D3;
+$secondary-color: #283593;
+$text-color: #8d8c8c;
+$second-text-color: #4c4b4b;
+$main-font-family: 'Overpass';
+$secondary-font-family: 'Source Sans Pro';
+$third-font-family: 'PT Sans';
+
+@function px-to-rem($px){
+    $remSize: $px/16px;
+    @return #{$remSize}rem;
+}
+
+@mixin flex-settings($direction:row, $jscon: flex-start, $al: stretch){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $jscon;
+    align-items: $al;
+}
+// @include flex-settings(column, flex-start, center);
+.App{
+    position: relative;
+    &:before{
+        position: absolute;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        z-index: 20000;
+        background-color: #160c0d;
+        opacity: 0.3;
+    }
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+}
+body{
+    min-width: 320px;
+    max-width: 2560px;
+    margin: auto;
+    position: relative;
+}
+.container {
+    min-width: 320px;
+    max-width: 1170px;
+    width: 100%;
+    overflow: hidden;
+}
+h1{
+    font-family: 'Overpass';
+    font-weight: 600;
+    font-size: 30px;
+    color: white;
+}
+h2{
+    font-family: 'Overpass';
+    font-weight: 600;
+    font-size: 26px;
+}
+h3{
+    font-family: 'Overpass';
+    font-weight: 600;
+    font-size: 22px;
+}
+h4{
+    font-family: 'Overpass';
+    font-weight: 400;
+    font-size: 20px;
+}
+h5{
+    font-family: 'Overpass';
+    font-weight: 400;
+    font-size: 16px;
+}
+%pharagraph1{
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+    font-size: 20px;
+}
+%pharagraph2{
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+}
+%pharagraph3{
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+    font-size: 14px;
+}
+%pharagraph4{
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+    font-size: 12px;
+    color: #8d8c8c;
+}
+%text{
+    font-family: $third-font-family;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    line-height: 20px;
+}
+
+%btn{
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    font-family: $secondary-font-family;
+    font-weight: 700;
+    font-size: 20px;
+    outline: none;
+}
+%bgi-img-center{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+%bgc-img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+%text-tip{
+    content: attr(dataTitle); 
+    display: block;
+    z-index: 999;
+    position: absolute;
+    border-radius: 4px;
+    font-family: $secondary-font-family;
+    font-size: 10px;
+    padding: 5px 5px;
+    color: white;
+    background-color: #707070;
+}
+@media (min-width: 768px){
+    h1{
+        font-size: 42px;
+    }
+    h2{
+        font-size: 42px;
+    }
+    h3{
+        font-size: 26px;
+    }
+    h4{
+        font-size: 22px;
+    }
+    h5{
+        font-size: 18px;
+    }
+    %btn{
+        border-radius: 4px;
+        padding: 10px 0;
+    }
+    %text{
+        font-size: 18px;
+        text-align: center;
+        line-height: 20px;
+    }
+}
+@media (min-width: 1024px){
+    h1{
+        font-size: 50px;
+    }
+    %text{
+        font-size: 18px;
+        text-align: center;
+        line-height: 20px;
+    }
+}

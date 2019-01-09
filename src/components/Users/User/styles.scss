@@ -1,0 +1,87 @@
+@import "../../../css/styles.scss";
+.user-block{
+    @include flex-settings(column, flex-start, stretch);
+    width: 100%;
+    text-align: center;
+    margin-bottom: px-to-rem(29px);
+    &:last-child{
+        margin-bottom: 0;
+    }
+    .user-block-photo{
+        padding: 0;
+        margin: auto;
+        border-radius: 50%;
+        display: block;
+        width: px-to-rem(70px);
+        height: px-to-rem(70px);
+    }
+    .user-name{
+        display: block;
+        position: relative;
+        padding: px-to-rem(9px) 0;
+        font-size: px-to-rem(22px);
+        line-height: px-to-rem(25px);
+        font-weight: 600;
+        &:hover::before { 
+            @extend %text-tip;
+            top: -10%;
+            left: 20%;
+           }
+        
+    }
+    .user-position,
+    .user-email,
+    .user-phone{
+        padding-bottom: px-to-rem(5px);
+        @extend %pharagraph3;
+    }
+    .user-email{
+        position: relative;
+        &:hover::before {
+            @extend %text-tip;
+            top: 0;
+            left: 50%;
+        }
+    }
+}
+@media (min-width: 768px){
+    .user-block{
+        width: 30%;
+        margin-bottom: px-to-rem(35px);
+        align-self: flex-start;
+        &:nth-last-child(-n+3){
+            margin-bottom: 0px; 
+        }
+        .user-name{
+            padding: px-to-rem(11px) 0 px-to-rem(8px) 0;
+        }
+    }
+}
+@media (min-width: 1024px){
+    .user-block{
+        width: 31%;
+        flex-direction: row;
+        margin-bottom: px-to-rem(76px);
+        &:nth-last-child(-n+3){
+          margin-bottom: 0px;
+        }
+        .user-block-photo{
+            margin: 0;
+            margin-right: px-to-rem(10px);
+        }
+        .user-block__info{
+            padding-top: px-to-rem(15px);
+            .user-position,
+            .user-email,
+            .user-phone, 
+            .user-name{
+               text-align: left;
+            }
+            .user-name{
+                padding: 0;
+                padding-top: px-to-rem(7px);
+                margin-bottom: px-to-rem(12px);
+            }
+        }
+    }
+}
