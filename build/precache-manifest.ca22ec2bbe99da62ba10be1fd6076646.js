@@ -84,16 +84,16 @@ self.__precacheManifest = [
     "url": "/abz-test/build/static/media/sign-out-option.580da199.svg"
   },
   {
-    "revision": "a1271bda2f4924c6538b146f55b55a03",
-    "url": "/abz-test/build/static/media/Tablet.a1271bda.png"
+    "revision": "fb4064189c5b847dec4ad65e2ad24922",
+    "url": "/abz-test/build/static/media/Mobile@2x.fb406418.png"
   },
   {
     "revision": "59b91b321a6042cb94d06b6132f4734a",
     "url": "/abz-test/build/static/media/Mobile.59b91b32.png"
   },
   {
-    "revision": "fb4064189c5b847dec4ad65e2ad24922",
-    "url": "/abz-test/build/static/media/Mobile@2x.fb406418.png"
+    "revision": "a1271bda2f4924c6538b146f55b55a03",
+    "url": "/abz-test/build/static/media/Tablet.a1271bda.png"
   },
   {
     "revision": "4af1ed4e74141c154d77f4fa8b0f3711",
@@ -104,12 +104,12 @@ self.__precacheManifest = [
     "url": "/abz-test/build/static/media/Desktop.3da6d2f8.png"
   },
   {
-    "revision": "3da6d2f807e3b9075bc0c0e8cb4f1f2c",
-    "url": "/abz-test/build/static/media/Desktop@2x.3da6d2f8.png"
-  },
-  {
     "revision": "a4c720dd4a83a2811540ecfc49df3034",
     "url": "/abz-test/build/static/media/2K.a4c720dd.png"
+  },
+  {
+    "revision": "3da6d2f807e3b9075bc0c0e8cb4f1f2c",
+    "url": "/abz-test/build/static/media/Desktop@2x.3da6d2f8.png"
   },
   {
     "revision": "0f8381471d20f5f2f2d35992d8df94bf",
