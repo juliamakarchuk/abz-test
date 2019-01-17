@@ -2,7 +2,7 @@
   "name": "my-test",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://juliamakarchuk.github.io/abz-test/build",
+  "homepage": "https://juliamakarchuk.github.io/landing-react-project/build",
   "dependencies": {
     "@quoine/object-to-formdata": "0.0.1",
     "autoprefixer": "^9.4.3",
