@@ -39,7 +39,7 @@ const SocialsBar = () =>{
          </svg>
       </a>
  </div>
- <p classNames = 'footer__rights-text'>&copy; abz.agency specially for the test task</p>
+ <p classNames = 'footer__rights-text'>&copy; All rights reserved</p>
  </div>
   )
 }

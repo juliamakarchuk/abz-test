@@ -8,8 +8,11 @@
     background-color: white;
 }
 .header__logo{
-    width: px-to-rem(134px);
-    height: px-to-rem(24px);
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: $main-font-family;
+  font-size: 24px;
 }
 .menu-span{
     position: relative;

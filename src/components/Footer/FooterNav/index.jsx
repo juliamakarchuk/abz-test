@@ -1,6 +1,5 @@
 import React from 'react';
 
-import logo from '../../../images/logo2.png';
 import './styles.scss';
 
 
@@ -8,8 +7,8 @@ const FooterNav = () => {
     return(
         <div className = 'footer__container'>
              <div className= 'footer__logo-container'>
-                <a href="#">
-                    <img src = { logo } alt="company logo: abz agency" className = 'footer__logo'/>
+                <a href="#" className = 'footer__logo'>
+                    ICON
                 </a>
              </div>
              <ul className = 'footer__menu'>

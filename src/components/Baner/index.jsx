@@ -9,13 +9,11 @@ const Baner = ({ hideMenu }) =>{
         <div className = 'wrapper wrapper-img'>
           <div className = 'baner container' onClick = {()=>hideMenu()}>
              <h1 className = 'baner__title'>
-                Test assignment for Frontend Developer position
+                Lorem ipsum dolor sit amet.
              </h1>
              <p className = 'baner__text' >
-             We kindly remind you that your test assignment should be 
-             submitted as a link to github/bitbucket repository.
-             <span> Please be patient, we consider and respond to every application 
-             that meets minimum requirements. We look forward to your submission. Good luck!</span>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quaerat eos quam, molestiae veniam illo beatae soluta nihil blanditiis praesentium.
+             <span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi laboriosam voluptas beatae qui eveniet magnam dicta minima vero veritatis earum!</span>
              </p>
              <a className = 'baner__btn' href = '#registration-block'>Sign Up</a>
           </div>

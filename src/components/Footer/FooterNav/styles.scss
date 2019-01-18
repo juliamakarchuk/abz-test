@@ -5,8 +5,11 @@
     padding: px-to-rem(32px) 0px px-to-rem(30px) 0;
     border-bottom: 1px solid #5674b9;
     .footer__logo{
-        width: px-to-rem(134px);
-        height: px-to-rem(24px);
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+         font-family: $main-font-family;
+        font-size: 24px;
         margin-bottom: px-to-rem(14px);
     }
     ul{

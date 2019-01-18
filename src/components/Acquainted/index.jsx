@@ -20,13 +20,9 @@ const Acquinted = () =>{
                  <div className = 'acquinted__about'>
                    <h3 className = 'acquinted__subtitle'>I am cool frontend developer</h3>
                    <p className = 'acquinted__text'>
-                    When real users have a slow experience on mobile, they're much less likely to 
-                    find what they are looking for or purchase from you in the future. For many 
-                    sites this equates to a huge missed opportunity, especially when more than 
-                    half of visits are abandoned if a mobile page takes over 3 seconds to load.</p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus odio quaerat praesentium quis sint iste. Eveniet doloremque deserunt explicabo assumenda. Repudiandae magnam non illum deserunt debitis?</p>
                     <p className = 'acquinted__text'>
-                    Last week, Google Search and Ads teams announced two new speed initiatives 
-                    to help improve user-experience on the web. 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla neque minus iste nemo minima quos odit impedit possimus, provident accusantium! Ipsa ipsum magnam quisquam impedit voluptate! Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, corporis.
                     </p>
                    <a className = 'acquinted__btn' href = '#registration-block'>Sign Up</a>
                  </div>

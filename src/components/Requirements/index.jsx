@@ -18,21 +18,13 @@ const  Requirements = () => {
                  </div>
                  <div className = 'requirements__left-block'>
                  <p className = 'requirements__text'>
-                 Users want to find answers to their questions quickly and data shows that people 
-                 really care about how quickly their pages load. The Search team announced speed 
-                 would be a ranking signal for desktop searches in 2010 and as of this month (July 2018), 
-                 page speed will be a ranking factor for mobile searches too.
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia asperiores est distinctio animi molestias nostrum vero nemo. Nisi consectetur quod, tempora architecto aut, nobis eos in aspernatur laudantium recusandae natus?
                  </p>
                  <p className = 'requirements__text'>
-                 If you're a developer working on a site, now is a good time to evaluate your performance 
-                 using our speed tools. Think about how performance affects the user experience of your pages 
-                 and consider measuring a variety of real-world user-centric performance metrics.
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolorem saepe deleniti accusamus exercitationem accusantium rerum. Dignissimos, ducimus enim, nulla magnam aliquam numquam optio quaerat eos illum minima amet rerum obcaecati! Consectetur, consequuntur a! Voluptas dolorum consequuntur, est assumenda inventore consequatur soluta iure debitis quasi magni error. Aperiam, minima expedita?
                  </p>
                  <p className = 'requirements__text'>
-                 Are you shipping too much JavaScript? Too many images? Images and JavaScript are the most 
-                 significant contributors to the page weight that affect page load time based on data from 
-                 HTTP Archive and the Chrome User Experience Report - our public dataset for key UX metrics 
-                 as experienced by Chrome users under real-world conditions.
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, optio perferendis. Eum odio soluta unde voluptatem facere voluptate at, accusamus ipsum fugiat? Quisquam sequi tenetur iusto porro iste non. Aliquid cum magni tenetur reprehenderit, dicta fugit, non libero illum nemo molestiae nisi harum. Ut nihil laborum provident mollitia id impedit commodi modi sed. Tempora consequatur sed quia suscipit aliquam voluptate.
                  </p>
                  </div>
                </div>
